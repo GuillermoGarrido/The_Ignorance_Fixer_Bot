@@ -19,7 +19,7 @@ def run_bot():
 	    isMatch = any(string in comment_text for string in words_to_match)
 	    if comment.id not in cache and isMatch:
 		    print("Match found! Comment ID: " + comment.id)
-		    comment.reply('I think you meant to say "ignorance"')
+		    comment.reply('Greetings, I am a bot. I think you meant to say "ignorance".')
 		    print("Reply successful!")
 		    cache.append(comment.id)
     print("Comments loop finished, time to sleep")
